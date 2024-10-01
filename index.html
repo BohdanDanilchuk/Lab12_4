@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація циклів</title>
+</head>
+<body>
+    <h1>Демонстрація циклів в JavaScript</h1>
+
+    <h2>Сума чисел (Цикл for):</h2>
+    <p id="for-sum"></p>
+
+    <h2>Сума чисел (Цикл while):</h2>
+    <p id="while-sum"></p>
+
+    <h2>Сума чисел (Цикл do...while):</h2>
+    <p id="do-while-sum"></p>
+
+    <script>
+        // Цикл for
+        let forSum = 0;
+        for (let i = 1; i <= 5; i++) {
+            forSum += i; 
+        }
+        document.getElementById('for-sum').textContent = `Сума чисел від 1 до 5 (for): ${forSum}`;
+
+        // Цикл while
+        let whileSum = 0;
+        let j = 1;
+        while (j <= 5) {
+            whileSum += j; 
+            j++;
+        }
+        document.getElementById('while-sum').textContent = `Сума чисел від 1 до 5 (while): ${whileSum}`;
+
+        // Цикл do...while
+        let doWhileSum = 0;
+        let k = 1;
+        do {
+            doWhileSum += k; 
+            k++;
+        } while (k <= 5);
+        document.getElementById('do-while-sum').textContent = `Сума чисел від 1 до 5 (do...while): ${doWhileSum}`;
+    </script>
+</body>
+</html>
